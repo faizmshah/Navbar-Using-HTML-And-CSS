@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.navbar {
+  text-align: center;
+  background-color: rgb(0, 0, 0);
+  background-size: cover;
+}
+
+.navbar ul {
+  display: inline-flex;
+  list-style: none;
+}
+
+.navbar ul li {
+  margin: 15px;
+  padding: 5px;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar ul li:hover {
+  background-color: rgb(255, 255, 0);
+  border-radius: 3px;
+}
+.navbar ul li a:hover {
+    color: rgb(0, 0, 0);
+}
+
+.Campuses-menu {
+  display: none;
+}
+.navbar ul li:hover .Campuses-menu {
+  display: block;
+  position: absolute;
+  background: black;
+  margin-top: 8px;
+  margin-left: -15px; 
+}
+.navbar ul li:hover .Campuses-menu ul {
+    display: block;
+    margin: 5px;
+}
+
+.navbar ul li:hover .Campuses-menu ul li {
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px double #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+.navbar ul li:hover .Campuses-menu ul li:last-child {
+    
+    border-bottom: none;
+    
+}
+
+.navbar ul li:hover .Campuses-menu ul li a:hover {
+    color:rgb(255, 255, 0);
+
+}
+
+.karachi-menu {
+    display: none;
+  }
+
+  .navbar ul li:hover .Campuses-menu ul li:hover .karachi-menu
+ {
+    display: block;
+    position: absolute;
+    background: rgb(255, 0, 0);
+    margin-top: -40px;
+    margin-left: 160px; 
+  }
